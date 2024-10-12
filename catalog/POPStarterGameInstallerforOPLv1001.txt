@@ -1,0 +1,3 @@
+Simple application that takes your PlayStation games, converts them to VCD and sets them up to be emulated with POPS.
+It creates an index file which can be read by both, Open PS2 Loader and POPSY-X.
+Also, it adds cover art to the games.

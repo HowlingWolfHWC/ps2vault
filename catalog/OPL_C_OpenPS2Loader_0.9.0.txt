@@ -1,0 +1,35 @@
+This OPL version has these new features:
+
+CORE:
+- various fixes
+- added configurable USB delay (increase this value to avoid stucking on yellow or orange screen when using USB mode)
+- added delay to CDVDMAN functions (initially for Shadow Heart 2)
+- compatibility mode 7 which is unused now (remove useless code)
+- update to comply with the latest PS2SDK
+- added better cd tray emulation (fixes A2M games)
+- fix for DVD9 games
+- added HD Pro support
+
+GUI:
+- various fixes
+- Disabled auto-refresh of game list by default
+- layout adjustment
+- added hidden options to be able to define your own device delay before loading ART/config files
+- added skinnable start, select and action buttons
+- language files update
+- added "list share" feature: select one share from the list and connect it to display the games
+- added ETH Prefix
+- Support for Right-to-Left scripting (Hebrew, Arabic, Syriac, Tifinar, ... languages)
+- automatically create the CFG folder
+- Configuration related to DNAS/VMC/DMA/COMPAT are now saved in single per game files on each media
+- added a delay before loading per-game config file (same as Art, to not spam when navigating very fast)
+- hints now display either "Info" or "Run"
+- added loading attributes from a per-game file
+- added information page
+- Mode setting (PAL/NTSC/Auto)
+- Longer first-press delay for pads - more comfy controls on max repeat speed
+- short ELF name in App list (looks better for most themes)
+- Added option to specify the HDD spin down time out
+- Added theme support for multiple fonts
+- configurable IGR path (limited to 32 characters)
+- switch default background mode to "Art"

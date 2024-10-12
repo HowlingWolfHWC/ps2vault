@@ -1,0 +1,3 @@
+Custom PS2PSXe GUI and game manager.
+
+It will install, configure, decorate and manage your PS1 (PS-X) games and will allow you to run them from the USB port of your PlayStation 2 with ease and comfort, accompanied of course by an interface design that is pleasing to the eye.

@@ -1,0 +1,11 @@
+This OPL version has these new features:
+
+- Cache games list
+- New APPS system
+- Merged GSM-CHEAT-VMC-Childproof
+- DS3 and DS4 PADEMU
+- PS2LOGO support
+- New default theme
+- Hi-Res modes
+- Sound effects
+- Varios bug fixes

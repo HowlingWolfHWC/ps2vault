@@ -1,0 +1,8 @@
+This OPL version has these new features:
+
+- Switched to whole new IOP core
+- Changed some compatibility modes effect
+- Added compatibility for DVD9 layer1
+- Improved overall speed for both SMB/USB
+- Support for more embedded NAS devices
+- Support for multiple partitions

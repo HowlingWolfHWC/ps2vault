@@ -1,0 +1,9 @@
+This OPL version has these new features:
+
+- Added network support
+- Added compatibility modes
+- isofs/cdvdman now use disc type
+- cdvdman now has streams
+- Static interface available
+- Added language support
+- It works in PS3 with PS2 software emulation

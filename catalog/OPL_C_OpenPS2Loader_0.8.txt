@@ -1,0 +1,19 @@
+This OPL version has these new features:
+
+- Added loading support for ISO format (SMB and USB)
+- Improved NAS support for more devices
+- Secure authentication for the SMB module (to enable security and write access)
+- Various improvements to Network support (NBSS keep-alive, small ingame speed-up)
+- Added ELF Loader to launch other Apps
+- Added compatibility for new external USB HDD with 1k/2k/4k cluster file
+- Added full compatibility for old PS2 consoles (10k JAP)
+- Re-Designed Display
+- Supports Cover Art
+- Fully Customizable Theme support
+- Support to Load/Save OPL configurations from multiple devices (USB and HDD)
+- Added VMC (Virtual Memory Card) support
+- Added HDL Server for HDD game installation over network
+- Added "rename" and "delete" functionalities for games lists
+- Childproof mode (prevents configuration change from being made)
+- Added ability to refresh game lists
+- Beloved stable version which the scene used for a big while

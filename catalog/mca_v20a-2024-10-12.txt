@@ -1,0 +1,7 @@
+This tool formats/unformats memory cards and also creates/writes images of them.
+It can be used to restore cards broken by other formatters back to normal,
+like when 64MB card has been formatted to 8MB by MCKiller and similar tools).
+
+Warning:
+Do not use this software to increase the size of your Memory Card.
+You might damage it beyond repair.

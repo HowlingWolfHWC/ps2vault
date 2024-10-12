@@ -1,0 +1,16 @@
+This OPL version has these new features:
+
+- Improved network startups and various fixes
+- Added internal HDD support (HDL format)
+- Added the ability to choose the default menu (USB, NET, HDD games)
+- Added the ability to use a valid disc ID for online games
+- Added a fix for modchip freezing (maybe not all modchips)
+- Many new game compatibility fixes
+- Added IGR (In Game Reset) with a disable per game option
+- Added Alphabetical Sorting
+- Changed Settings categories
+- Added page scrolling (R1/L1)
+- Added support for user language files
+- Network support added for PS3
+- Zipped Theme support
+- Added PCMCIA support for the 18K

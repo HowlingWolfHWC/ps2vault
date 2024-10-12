@@ -1,0 +1,10 @@
+Latest stable version of OPL. It has these new features:
+
+- gcc 11 toolchain used for both EE and IOP
+- NBD server for transferring files over network
+- New USB mass storage driver
+- (experimental) i.LINK/IEEE1394/FireWire support
+- (experimental) MX4SIO support
+- internal HDD users now can change partition for storing settings.
+- HDD OSD users can use OPL with OPL Launcher
+- GUI settings reorganized and renamed
