@@ -1,0 +1,1 @@
+To export the HTML file, focus the ListBox1 and press Ctrl.
