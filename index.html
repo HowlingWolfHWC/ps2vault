@@ -1,0 +1,629 @@
+﻿<html>
+<head>
+<meta charset="utf8"/>
+<meta http-equiv="Content-Language" content="es">
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+
+<meta property="og:title" content="Homebrew applications for your PS2" />
+<meta property="og:description" content="The PlayStation 2 Vault" />
+<meta property="og:site_name" content="Howling Wolf & Chelsea" />
+<meta property="og:image" content="pics/previewps2vault.png"/>
+<meta property="og:image:width" content="355" />
+<meta property="og:image:height" content="355" />
+
+<title>The PlayStation 2 Vault - Howling Wolf &amp; Chelsea</title>
+
+<style>
+.light-grey{font-family: Calibri;font-size: 15pt;font-weight: bold;color:#000!important;background-color:#f1f1f1!important}
+
+.tabla {
+  /* background-color: black; */
+  font-family: Calibri;
+  font-size: 15pt;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+  transition: .3s;
+  
+}
+.tabla:hover {
+  background-color: #323232;
+  text-shadow: 0 0 7px #000;
+} 
+
+.centro {
+	text-align: center;
+}
+.auto-style2 {
+	font-size: 14pt;
+	font-weight: bold;
+}
+.oculto {
+	font-size: 2pt;
+	display:none;
+}
+
+
+.auto-style3 {
+	text-align: center;
+	color: #BEBEBE;
+}
+
+
+.textotabla {
+	margin: 5px 5px 5px 5px;
+}
+
+
+.auto-style4 {
+	font-size: 10pt;
+}
+.auto-style5 {
+	margin: 5px 5px 5px 5px;
+	text-align: justified;
+}
+
+
+.auto-style6 {
+	font-weight: normal
+}
+
+
+.auto-style7 {
+	margin-top: 0px;
+	margin-bottom: 1px;
+}
+
+
+a {
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+a:visited {
+	color: #C0C0C0;
+	TEXT-DECORATION: none;
+}
+a:active {
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+a:hover {
+	color: #FFFFFF;
+	TEXT-DECORATION: underline;
+}
+
+
+.auto-style8 {
+	color: #C0C0C0;
+}
+
+
+.auto-style9 {
+	border-width: 0px;
+}
+
+.linkedimages {
+  transition: .3s;
+  
+}
+.linkedimages:hover {
+  opacity: 0.5;
+} 
+
+
+</style>
+<link rel="stylesheet" href="modal-dialog.css">
+</head>
+<body background="pics/fondo.jpg" style="background-attachment: fixed; color: #FFFFFF;">
+<script>
+	Filtrar = '***FILTRO:ALL***';
+	Recommended = '***FILTRO:RECOMMENDED***';
+	SoloRecomendar = [];
+	SoloRecomendar[0] = 1;
+</script>
+<svg style="display:none">
+  <defs>
+    <symbol viewBox="0 0 38 38" id="icon-cross">
+      <path d="M19 17.6l5.3-5.4 1.4 1.4-5.3 5.4 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.2-5.3-5.2-5.3 1.4-1.4 5.3 5.3z"></path>
+    </symbol>
+    <symbol viewBox="0 0 150 130" id="icon-loading">
+      <path d="M81.5 33l30.8-32.8c0.3-0.3 0.5-0.2 0.3 0.3 -1.8 5.2-1.7 15.3-1.7 15.3 -0.1 6.8-0.8 11.7-6.6 17.9L74.8 65.1c-0.2 0.2-0.4 0-0.3-0.2 1.5-5.1 1.2-15.1 1.2-15.1C75.4 45.6 76.4 38.4 81.5 33M105.9 54.8l43.8 10.3c0.4 0.1 0.4 0.4-0.2 0.4 -5.4 1-14.1 6.1-14.1 6.1 -6 3.3-10.5 5.2-18.8 3.2l-41.9-9.9c-0.3-0.1-0.2-0.3 0-0.4 5.2-1.3 13.7-6.5 13.7-6.5C92 55.9 98.7 53.1 105.9 54.8M99.4 86.3l13 43.2c0.1 0.4-0.1 0.5-0.4 0.1 -3.6-4.2-12.4-9.2-12.4-9.2 -5.8-3.5-9.7-6.5-12.2-14.6L75 64.5c-0.1-0.3 0.2-0.4 0.3-0.2 3.7 3.9 12.5 8.6 12.5 8.6C91.5 74.8 97.3 79.2 99.4 86.3M68.7 97l-30.8 32.8c-0.3 0.3-0.5 0.2-0.3-0.3 1.8-5.2 1.7-15.3 1.7-15.3 0.1-6.8 0.8-11.7 6.6-17.9l29.5-31.4c0.2-0.2 0.4 0 0.3 0.2 -1.5 5.1-1.2 15.1-1.2 15.1C74.8 84.4 73.8 91.6 68.7 97M44.1 75.8L0.3 65.4C-0.1 65.3-0.1 65 0.5 65c5.4-1 14.1-6.1 14.1-6.1 6-3.3 10.5-5.2 18.8-3.2l41.9 9.9c0.3 0.1 0.2 0.3 0 0.4 -5.2 1.3-13.7 6.5-13.7 6.5C58.1 74.7 51.3 77.5 44.1 75.8M50.2 43.8l-13-43.2c-0.1-0.4 0.1-0.5 0.4-0.1C41.2 4.7 50 9.7 50 9.7c5.8 3.5 9.7 6.5 12.2 14.6l12.4 41.3c0.1 0.3-0.2 0.4-0.3 0.2 -3.7-3.9-12.5-8.6-12.5-8.6C58.1 55.4 52.4 50.9 50.2 43.8"></path>
+    </symbol>
+  </defs>
+</svg>
+
+<div align="center">
+<br><table background="pics/tabla.png" width="90%" height="25"><tr><td colspan="3"><p align="center"><b><font face="Calibri" style="font-size: 20pt" color="#FFFFFF">
+		The PlayStation 2 Vault</font></b></td></tr><tr><td style="width:20%">
+			&nbsp;</td>
+		<td class="auto-style3">
+		<font face="Calibri" class="auto-style2">Homebrew applications for your PS2</font></td><td style="width:20%">
+			&nbsp;</td></tr></table><br>
+	
+	<table background="pics/tabla.png" width="90%" height="1%"><tr>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="Todos" onclick="SetShowAll()" style="cursor: pointer;">Everything</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="PS2GL" onclick="SetShowPS2GL()" style="cursor: pointer;">PS2 Game Launchers</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="PS1GL" onclick="SetShowPS1GL()" style="cursor: pointer;">PS1 Game Emulators</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="RETRO" onclick="SetShowRETRO()" style="cursor: pointer;">Retro Emulators</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="MEDIA" onclick="SetShowMEDIA()" style="cursor: pointer;">Media Players</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="LAUNC" onclick="SetShowLAUNC()" style="cursor: pointer;">File Managers</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="HBGAM" onclick="SetShowHBGAM()" style="cursor: pointer;">Homebrew Games</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="TOOLS" onclick="SetShowTOOLS()" style="cursor: pointer;">Miscellaneous Tools</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="ENTRY" onclick="SetShowENTRY()" style="cursor: pointer;">Entry Points</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="PCAPP" onclick="SetShowPCAPP()" style="cursor: pointer;">PC Applications</font></p></b></td>
+	</tr></table><br>
+	<table background="pics/tabla.png" width="17%" height="1%"><tr>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="RECOMMENDEDONLY" onclick="SetSoloRecomendar()" style="cursor: pointer;">Latest versions only</font></p></b></td>
+	<td class="tabla" colspan="3" style="width:1%; padding: 5px 5px 5px 5px;"><p align="center"><b><font face="Calibri" style="font-size: 12pt" color="#FFFFFF"><a id="SHOWTHEMALL" onclick="SetNoRecomendar()" style="cursor: pointer;">Show every version</font></p></b></td>
+	</tr></table><br>
+<table id="base" style="width: 90%">
+<td>
+<input type="text" id="myInput" onkeyup="Buscar()" placeholder="Search" title="Buscador" style="width:100%">
+<table background="pics/tabla.png" id="myTable" style="width: 100%">
+  <tbody><tr class="light-grey">
+    <th style="width:64;"></th>
+    <th style="width:25%;">Application</th>
+    <th style="width:75%;">Description</th>
+    <th style="width:5%;" class="oculto">Search tags</th>
+  </tr>
+  ﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/mca_v20a-2024-10-12.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_mca.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/mca_v20a-2024-10-12.zip"><p class="textotabla">Memory Card Annihilator  <font size="2" color="#C0C0C0">(v2.0a)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This tool formats/unformats memory cards and also creates/writes images of them.<br>It can be used to restore cards broken by other formatters back to normal,<br>like when 64MB card has been formatted to 8MB by MCKiller and similar tools).<br><br>Warning:<br>Do not use this software to increase the size of your Memory Card.<br>You might damage it beyond repair.</font><br><a href="https://www.psx-place.com/threads/memory-card-annihilator-v2-0a-a-new-version-after-more-than-11-years.36277/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:TOOLS***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/nhddl-020.zip" target="_blank"><img alt="" height="64" src="icons/ic_cat_tools.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/nhddl-020.zip"><p class="textotabla">NHDDL  <font size="2" color="#C0C0C0">(0.2.0)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">A PS2 exFAT BDM launcher for neutrino.<br><br>NHDDL is a memory card-based launcher that scans FAT-formatted BDM devices for ISO files, lists them and boots selected ISO via neutrino.<br><br>It displays visual Game ID to trigger per-game settings on the Pixel FX line of products and writes to memory card history file before launching the title, triggering per-title memory cards on SD2PSX and MemCard PRO 2.</font><br><a href="https://github.com/pcm720/nhddl" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/usbld_0.0.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/usbld_0.0.zip"><p class="textotabla">USB Loader  <font size="2" color="#C0C0C0">(0.0)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Launches nothing.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/usbld_0.1.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/usbld_0.1.zip"><p class="textotabla">USB Loader  <font size="2" color="#C0C0C0">(0.1)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>This is the first version that can launch a game.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/usbld_0.2.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/usbld_0.2.zip"><p class="textotabla">USB Loader  <font size="2" color="#C0C0C0">(0.2)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Now works on PAL consoles.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/usbld_0.2b.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/usbld_0.2b.zip"><p class="textotabla">USB Loader  <font size="2" color="#C0C0C0">(0.2b)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Now uses a new USBD module and has a method to select the video output.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/usbld_0.3_rc1.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/usbld_0.3_rc1.zip"><p class="textotabla">USB Loader  <font size="2" color="#C0C0C0">(0.3)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Latest closed source version.<br>There's no changelog on this one, but something changed for sure!</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openusbld_0.4.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openusbld_0.4.zip"><p class="textotabla">Open USB Loader  <font size="2" color="#C0C0C0">(0.4)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>First open source version.<br>Everything has been reworked.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openusbld_0.41.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openusbld_0.41.zip"><p class="textotabla">Open USB Loader  <font size="2" color="#C0C0C0">(0.4.1 SVN)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Added theme support.<br>This version uses the latest driver at the time, from the SVN.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openusbld_0.41_usba.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openusbld_0.41_usba.zip"><p class="textotabla">Open USB Loader  <font size="2" color="#C0C0C0">(0.4.1 USBA)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">OPL ancestor.<br>Very, very outdated.<br>Added theme support.<br>This version uses the driver from USBAdvance.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.5.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.5.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.5)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Added network support<br>- Added compatibility modes<br>- isofs/cdvdman now use disc type<br>- cdvdman now has streams<br>- Static interface available<br>- Added language support<br>- It works in PS3 with PS2 software emulation</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.5" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.6.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.6.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.6)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Switched to whole new IOP core<br>- Changed some compatibility modes effect<br>- Added compatibility for DVD9 layer1<br>- Improved overall speed for both SMB/USB<br>- Support for more embedded NAS devices<br>- Support for multiple partitions</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.6" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.7.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.7.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.7)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Improved network startups and various fixes<br>- Added internal HDD support (HDL format)<br>- Added the ability to choose the default menu (USB, NET, HDD games)<br>- Added the ability to use a valid disc ID for online games<br>- Added a fix for modchip freezing (maybe not all modchips)<br>- Many new game compatibility fixes<br>- Added IGR (In Game Reset) with a disable per game option<br>- Added Alphabetical Sorting<br>- Changed Settings categories<br>- Added page scrolling (R1/L1)<br>- Added support for user language files<br>- Network support added for PS3<br>- Zipped Theme support<br>- Added PCMCIA support for the 18K</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.7" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.8.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.8.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.8)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Added loading support for ISO format (SMB and USB)<br>- Improved NAS support for more devices<br>- Secure authentication for the SMB module (to enable security and write access)<br>- Various improvements to Network support (NBSS keep-alive, small ingame speed-up)<br>- Added ELF Loader to launch other Apps<br>- Added compatibility for new external USB HDD with 1k/2k/4k cluster file<br>- Added full compatibility for old PS2 consoles (10k JAP)<br>- Re-Designed Display<br>- Supports Cover Art<br>- Fully Customizable Theme support<br>- Support to Load/Save OPL configurations from multiple devices (USB and HDD)<br>- Added VMC (Virtual Memory Card) support<br>- Added HDL Server for HDD game installation over network<br>- Added &quot;rename&quot; and &quot;delete&quot; functionalities for games lists<br>- Childproof mode (prevents configuration change from being made)<br>- Added ability to refresh game lists<br>- Beloved stable version which the scene used for a big while</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.8" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.9.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.9.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.9)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>CORE:<br>- various fixes<br>- added configurable USB delay (increase this value to avoid stucking on yellow or orange screen when using USB mode)<br>- added delay to CDVDMAN functions (initially for Shadow Heart 2)<br>- compatibility mode 7 which is unused now (remove useless code)<br>- update to comply with the latest PS2SDK<br>- added better cd tray emulation (fixes A2M games)<br>- fix for DVD9 games<br>- added HD Pro support<br><br>GUI:<br>- various fixes<br>- Disabled auto-refresh of game list by default<br>- layout adjustment<br>- added hidden options to be able to define your own device delay before loading ART/config files<br>- added skinnable start, select and action buttons<br>- language files update<br>- added &quot;list share&quot; feature: select one share from the list and connect it to display the games<br>- added ETH Prefix<br>- Support for Right-to-Left scripting (Hebrew, Arabic, Syriac, Tifinar, ... languages)<br>- automatically create the CFG folder<br>- Configuration related to DNAS/VMC/DMA/COMPAT are now saved in single per game files on each media<br>- added a delay before loading per-game config file (same as Art, to not spam when navigating very fast)<br>- hints now display either &quot;Info&quot; or &quot;Run&quot;<br>- added loading attributes from a per-game file<br>- added information page<br>- Mode setting (PAL/NTSC/Auto)<br>- Longer first-press delay for pads - more comfy controls on max repeat speed<br>- short ELF name in App list (looks better for most themes)<br>- Added option to specify the HDD spin down time out<br>- Added theme support for multiple fonts<br>- configurable IGR path (limited to 32 characters)<br>- switch default background mode to &quot;Art&quot;</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.9" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.9.1.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.9.1.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.9.1)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Version number updated<br><br>They seriously forgot to change the version number, so 0.9 still displayed 0.8</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.9.1" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.9.2.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.9.2.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.9.2)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>CORE:<br>- Merged OPL/OPLGSM codebase<br>- GSM Core 0.36.R - don't worry; 0.38 will be coming back better than ever!<br>- GSM Core no longer supports 576p, 1080p, Skip FMVs - this is temporary. <br>- GSM Core is now IGR and CodeBreaker/PS2rd compatible! (See Note 1)<br>- GSM no longer included in Childproof builds.<br>- Unified Makefile builds from single source tree via &quot;GSM=0/1&quot; argument (ala VMC/No VMC)<br>- Protokernel support now part of PS2SDK toolchain<br>- The integrated LibFreeType was removed, upgraded, and moved into the PS2SDK<br>- Upgraded LIBPNG, ATAD, HDPro, and DEV9 Module Code<br>- Added power-off processing code for older games - they should power off console now. <br>- Optimzed CDVDMAN and CDVDFSV<br>- Support for PSX DESR-5x00 and 7x00 units<br>- Built-in TLB reinitialization mechanism - no more EECORE hooking and patching. <br>- Modified Mode 7 to &quot;IOP Threading Hack&quot; <br>- Replaced SMAP driver<br>- Modified SMSTCPIP <br>- Ported a version of ETH Mode types from doctorxyz's OPLGSM<br><br>GUI: <br>- New &quot;Show GSM on Main Menu&quot; toggle in &quot;Settings&quot; (GSM Builds Only)<br>- New &quot;GSM Settings&quot; on Main Menu - easier navigation! (GSM Builds Only)<br>- Fixed issue with HDLSERV and GSM Settings not showing up immediately.<br>- Full Ethernet controls - can disable Auto-Negotiation and force a mode. <br>- Some things were are worded differently as less words carry more freight.<br>- Removed redundant UDMA modes - PS2 will never handle UDMA 5 and UDMA 6.<br>- Updated SMB support to give better error messages. <br>- Network error codes changed slightly - 300 for connection errors, 301 for logon errors, 302 for ECHO isalive         <br>  test failing, and 303 for share opening errors.<br><br>	<br>COMPATIBILITY: <br>- Kingdom Hearts 2 Final Mix (Gummi Fix)<br>- Baldar's Gate Series (HDD)<br>- Champions of Norrath (HDD)<br>- New Mode 7 fixes stuttering with games such as DDR and Pop'N Music (HDD ONLY!)</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.9.2" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_0.9.3.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_0.9.3.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(0.9.3)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>CORE:<br>- New RDB-based DECI2 Debugging System.<br>- Refactored and optimized core modules.<br>- New CDVDMAN streaming mechanism for better performance.<br>- Kinder, gentler, and hopefully better IGR mechanism<br>- Added support for the DTL-T10000, for debugging.<br>- Updated USB drivers - support drives greater than 1TB but less than 2TB in capacity, plus better reliability.<br>- Eliminated the need for user-configurable delays in USB support.<br>- Improved performance and stability of SMB support.<br>- VMC Fix - Slot2 should no longer clone Slot1 and vice versa<br>- Removed obsolete Compatibility Modes and needless GSM video modes.<br>- New PS2RD Cheat Engine port by Doctorxyz.<br>- Per-Game GSM Support.<br>- New super-slim EE core, making mode 1 (Alt EE core) obsolete.<br>- Added Accurate Reads mode, for emulating the reading speed and behaviour of the CD/DVD drive.<br>- The CallBack Timer (CBT) setting now uses a standardized value and was merged into Accurate Reads mode.<br>- Added a workaround for some clone network adaptors.<br>- Mode 7 &quot;IOP threading hack&quot; removed, as the new streaming mechanism has taken care of all related issues.<br>- New compatibility mode: &quot;high module storage&quot;. For games that need OPL to store its modules elsewhere, to avoid a memory conflict.<br>- Improved reading performance of the cdrom device.<br>- Improved reliability of some CDVDMAN functions, for more consistent behaviour.<br>- Improved DVD-DL support.<br>- Changed &quot;Disable DVD-DL&quot; to &quot;Emulate DVD-DL&quot; to better explain what it does. It's to emulate DVD-DL support, for DVD9 rips (games with their 2 layers compacted into 1).<br>- Fixed support for SMB usernames and passwords that are longer than 16 characters (limit extended to 31).<br>- Fixed renaming functionality for USBExtreme games.<br>- Various fixes for games.<br><br>GUI:<br>- Improved the behaviour of the auto-refresh option.<br>- GSM moved to Game Options menu since its a Per-Game option now.<br>- Infamous &quot;Blockhead Grande&quot; theme bug SQUARSHED! (Themes should now get loaded correctly, regardless of display settings).<br>- New theme and logo design by Jay-Jay.<br>- Better error reporting and help messages in general.<br>- Network settings are now saved in opl_network.cfg.<br>- Improved stability, design and UI responsiveness.<br>- Added missing icon hints.<br>- Fixed the problem with the HDLDump server being difficult to shut down properly.<br>- Fixed HDD corruption caused by deleting a game from the HDD unit.<br>- Added a new network update mechanism, which allows game compatibility records to be automatically downloaded from the OPL-CL service.<br>- SMB server can now be specified by its NetBIOS name.<br>- IP address configuration can be set automatically with DHCP, although it is still recommended to reserve an IP address for the PS2 in the network because the DHCP reservation will not be ever renewed while in-game.<br>- Renamed &quot;Enable Delete and Rename&quot; to &quot;Enable Write Operations&quot;.<br>- Changed the delete and modify VMC controls to be disabled instead of hidden, when writes are disabled.<br>- ISO disc images no longer strictly need to be named in a special format. Simply put your ISO files in your CD and DVD folders and OPL will find them.<br>- Renamed compatibility modes to have actual names.<br>- Game history will now be updated; the &quot;towers&quot; behind the &quot;SONY Computer Entertainment&quot; boot screen should continue to grow.<br>- Added support for OTF fonts.<br>- Added support for fonts stored on the HDD unit (root of +OPL partition; hdd0:+OPL/) and USB device (root of device; mass0:/).<br><br>GAME FIXES &amp; COMPATIBILITY IMPROVEMENTS:<br>- New patch: Choujikuu Yousai Macross<br>- New patch: Super Robot Wars IMPACT<br>- Drive state of sceCdStandby has been changed to PAUSE: Check iTV<br>- New patch: Ratchet and Clank: Up Your Arsenal<br>- New patch: The Oneechanbara<br>- New patch: The Oneechanpuruu<br>- New streaming mechanism for better playability: Various BEMANI games<br>- Initialization is performed for search functions: Lifeline</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/0.9.3" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/opl_c_openps2loader_1.0.0.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/opl_c_openps2loader_1.0.0.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(1.0.0)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This OPL version has these new features:<br><br>- Cache games list<br>- New APPS system<br>- Merged GSM-CHEAT-VMC-Childproof<br>- DS3 and DS4 PADEMU<br>- PS2LOGO support<br>- New default theme<br>- Hi-Res modes<br>- Sound effects<br>- Varios bug fixes</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/v1.0.0" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/opl_c_openps2loader_1.1.0.zip" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/opl_c_openps2loader_1.1.0.zip"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(1.1.0)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Latest stable version of OPL. It has these new features:<br><br>- gcc 11 toolchain used for both EE and IOP<br>- NBD server for transferring files over network<br>- New USB mass storage driver<br>- (experimental) i.LINK/IEEE1394/FireWire support<br>- (experimental) MX4SIO support<br>- internal HDD users now can change partition for storing settings.<br>- HDD OSD users can use OPL with OPL Launcher<br>- GUI settings reorganized and renamed</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/tag/v1.1.0" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/openps2loader_latest.htm" target="_blank"><img alt="" height="64" src="icons/ic_tool_opl.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/openps2loader_latest.htm"><p class="textotabla">Open PS2 Loader  <font size="2" color="#C0C0C0">(Latest nightly)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Latest nightly version of OPL.<br><br>It has all the latest stuff, but it is mostly untested and probably unstable.</font><br><a href="https://github.com/ps2homebrew/Open-PS2-Loader/commits/master/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PS2GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/popstartergameinstallerforoplv1001.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_ps1ds.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/popstartergameinstallerforoplv1001.zip"><p class="textotabla">POPStarter Game Installer for OPL  <font size="2" color="#C0C0C0">(v1.0.0.1)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Simple application that takes your PlayStation games, converts them to VCD and sets them up to be emulated with POPS.<br>It creates an index file which can be read by both, Open PS2 Loader and POPSY-X.<br>Also, it adds cover art to the games.</font><br><a href="https://www.psx-place.com/threads/popstarter-game-installer-for-opl.34243/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PCAPP***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/ps2psxe-aio-bundle.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_ps1d.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/ps2psxe-aio-bundle.zip"><p class="textotabla">PS2PSXe  <font size="2" color="#C0C0C0">(AIO Bundle)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Experimental PlayStation emulator by ffgriever.</font><br><a href="https://www.psx-place.com/threads/obsolete-ps2psxe-by-ffgriever.33586/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PS1GL***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/ps2sx-v1.3e.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_ps1d.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/ps2sx-v1.3e.zip"><p class="textotabla">PS2SX  <font size="2" color="#C0C0C0">(v1.3e)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Custom PS2PSXe GUI and game manager.<br><br>It will install, configure, decorate and manage your PS1 (PS-X) games and will allow you to run them from the USB port of your PlayStation 2 with ease and comfort, accompanied of course by an interface design that is pleasing to the eye.</font><br><a href="https://www.psx-place.com/threads/ps2sx.34809/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:PCAPP***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/pvcs-reloaded-0.3-bin.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/pvcs-reloaded-0.3-bin.zip"><p class="textotabla">PVCS Reloaded  <font size="2" color="#C0C0C0">(0.3)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Atari 2600 emulator for the PS2.<br><br>PVCS Reloaded attempts to bring PVCS 1.3 back to life!<br>It now supports following devices: Memory Card, USB Devices, CD/DVD, HDD.<br>This version was converted to PS2SDK/GsKi.<br>Sound was improved a lot either!</font><br><a href="https://www.brunofreitas.com/node/26" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/pvcs10.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/pvcs10.zip"><p class="textotabla">PVCS  <font size="2" color="#C0C0C0">(1.0)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Atari 2600 emulator for the PS2.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/pvcs12.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/pvcs12.zip"><p class="textotabla">PVCS  <font size="2" color="#C0C0C0">(1.2)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Atari 2600 emulator for the PS2.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/pvcs13.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/pvcs13.zip"><p class="textotabla">PVCS  <font size="2" color="#C0C0C0">(1.3)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">Atari 2600 emulator for the PS2.</font><br></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/jum52_08_independant.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/jum52_08_independant.zip"><p class="textotabla">Jum's A5200 Emulator  <font size="2" color="#C0C0C0">(0.8a)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This is an Atari 5200 emulator for PS2.<br><br>The 6502 CPU emulator source is heavily based on a distribution by Neil Bradley.<br>The POKEY sound emulator is a modified version  of Ron Fries POKEY emulator.<br>The rest is by Jum, using Bigboy's PS2 framework as a starting point.</font><br><a href="https://jum.pdroms.de/emulators/emu5200.html" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/jum52_ps2.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/jum52_ps2.zip"><p class="textotabla">Jum's A5200 Emulator  <font size="2" color="#C0C0C0">(0.7)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This is an Atari 5200 emulator for PS2.<br><br>The 6502 CPU emulator source is heavily based on a distribution by Neil Bradley.<br>The POKEY sound emulator is a modified version  of Ron Fries POKEY emulator.<br>The rest is by Jum, using Bigboy's PS2 framework as a starting point.</font><br><a href="https://jum.pdroms.de/emulators/emu5200.html" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:NOTRE*** ***FILTRO:RETRO***</td>
+  </tr>
+﻿<tr style="" class="tabla">
+    <td>
+	<a href="download/jum52_ps2_opl-port_uniqueusername.zip" target="_blank"><img alt="" height="64" src="icons/ic_emu_a2600.png" width="64" class="auto-style7"></a></td>
+    <td><a href="download/jum52_ps2_opl-port_uniqueusername.zip"><p class="textotabla">Jum's A5200 Emulator  <font size="2" color="#C0C0C0">(0.7 / OPL Port by UniqueUserName)</font></p></a></td>
+    <td class="auto-style4"><p class="auto-style5"><font size="3">This is an Atari 5200 emulator for PS2.<br><br>The 6502 CPU emulator source is heavily based on a distribution by Neil Bradley.<br>The POKEY sound emulator is a modified version  of Ron Fries POKEY emulator.<br>The rest is by Jum, using Bigboy's PS2 framework as a starting point.<br><br>It has been packed with instructions so you can launch it in OPL.</font><br><a href="https://www.psx-place.com/resources/opl-port-atari-5200-jum52-uniqueusernames-mod.346/" target="_blank"><p class="textotabla"><font size="2" color="#A0A0A0">Click here for more information...</font></p></a></p>
+	</td>
+    <td class="oculto">***FILTRO:ALL*** ***FILTRO:RECOMMENDED*** ***FILTRO:RETRO***</td>
+  </tr>
+</tbody></table>
+
+</td>
+</table>
+
+
+<script>
+function Buscar() {
+  var input, filter, table, tr, td, i, txtValue, tdA, tdB, tdC, txtValueA, txtValueB, txtValueC, stringArrays, iz, wordcounter, izz, existe;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  filter = filter.trim();
+  const espacio = ' ';
+  stringArrays = filter.split(espacio)
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName('tr');
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName('td')[1];
+    if (td) {
+		txtValue = td.textContent || td.innerText;
+		tdA = tr[i].getElementsByTagName('td')[2];
+		txtValueA = tdA.textContent || tdA.innerText;
+		tdB = tr[i].getElementsByTagName('td')[3];
+		txtValueB = tdB.textContent || tdB.innerText;
+		tdC = tr[i].getElementsByTagName('td')[3];
+		txtValueC = tdC.textContent || tdC.innerText;
+		/*NEW*/
+		existe = [];
+		FiltroID = [];
+		FiltroID[0] = 0;
+		Recomendar = [];
+		Recomendar[0] = 0;
+		for (izz = 0; izz < stringArrays.length; izz++) {
+			existe[izz] = 0;
+		}
+		for (iz = 0; iz < stringArrays.length; iz++) {
+			if (txtValue.toUpperCase().indexOf(stringArrays[iz]) > -1) {
+				existe[iz] = 1;
+			}
+		}
+		for (iz = 0; iz < stringArrays.length; iz++) {
+			if (txtValueA.toUpperCase().indexOf(stringArrays[iz]) > -1) {
+				existe[iz] = 1;
+			}
+		}
+		if (txtValueB.toUpperCase().indexOf(Filtrar) > -1) {
+			FiltroID[0] = 1;
+		}
+		if (txtValueC.toUpperCase().indexOf(Recommended) > -1) {
+			Recomendar[0] = 1;
+		}
+		/*for (iz = 0; iz < stringArrays.length; iz++) {
+			if (txtValueC.toUpperCase().indexOf(stringArrays[iz]) > -1) {
+				existe[iz] = 1;
+			}
+		}*/
+		wordcounter = 0;
+		for (izz = 0; izz < stringArrays.length; izz++) {
+			wordcounter = existe[izz] + wordcounter;
+		}
+		if (wordcounter == stringArrays.length) {
+			if (FiltroID[0] == 1) {
+				if (SoloRecomendar[0] == 0) {
+					tr[i].style.display = '';
+				} else {
+					if (Recomendar[0] == 1) {
+						tr[i].style.display = '';
+					} else {
+						tr[i].style.display = 'none';
+					}
+				}
+			} else {
+				tr[i].style.display = 'none';
+			}
+		} else {
+			tr[i].style.display = 'none';
+		}
+		/*NEW*/
+		/*
+		for (iz = 0; iz < stringArrays.length; iz++) {
+			if (txtValue.toUpperCase().indexOf(stringArrays[iz]) > -1) {
+				mostrar = 'Si';
+			}
+		}
+		for (iz = 0; iz < stringArrays.length; iz++) {
+			if (txtValueA.toUpperCase().indexOf(stringArrays[iz]) > -1) {
+				mostrarA = 'Si';
+			}
+		}
+		*/
+		/*
+		wordcounter = 0;
+		if (mostrar == 'Si') {
+			wordcounter = wordcounter++;
+		}
+		if (mostrarA == 'Si') {
+			wordcounter = wordcounter++;
+		}
+		if (wordcounter == stringArrays.length) {
+			tr[i].style.display = '';
+		} else {
+			tr[i].style.display = 'none';
+		}
+		*/
+		
+		/*
+		if (mostrar == 'Si') {
+			tr[i].style.display = '';
+		} else {
+			if (mostrarA == 'Si') {
+				tr[i].style.display = '';
+			} else {
+				tr[i].style.display = 'none';
+			}
+			tr[i].style.display = 'none';
+		}
+		*/
+		
+		/*if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			tr[i].style.display = '';
+		} else {
+			tdA = tr[i].getElementsByTagName('td')[1];
+			txtValueA = tdA.textContent || tdA.innerText;
+			if (txtValueA.toUpperCase().indexOf(filter) > -1){
+				tr[i].style.display = '';
+			} else {
+				tr[i].style.display = 'none';
+			}
+		}
+		*/
+    }       
+  }
+}
+</script>
+<script>
+function SetShowAll() {
+  Filtrar = '***FILTRO:ALL***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowPS2GL() {
+  Filtrar = '***FILTRO:PS2GL***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowPS1GL() {
+  Filtrar = '***FILTRO:PS1GL***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowRETRO() {
+  Filtrar = '***FILTRO:RETRO***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowMEDIA() {
+  Filtrar = '***FILTRO:MEDIA***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowLAUNC() {
+  Filtrar = '***FILTRO:LAUNC***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowHBGAM() {
+  Filtrar = '***FILTRO:HBGAM***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+
+function SetShowTOOLS() {
+  Filtrar = '***FILTRO:TOOLS***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowENTRY() {
+  Filtrar = '***FILTRO:ENTRY***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetShowPCAPP() {
+  Filtrar = '***FILTRO:PCAPP***';
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+
+function SetSoloRecomendar() {
+  SoloRecomendar = [];
+  SoloRecomendar[0] = 1;
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+function SetNoRecomendar() {
+  SoloRecomendar = [];
+  SoloRecomendar[0] = 0;
+  document.getElementById("myInput").value = "";
+  Buscar();
+}
+Buscar();
+</script>
+<br>
+<table background="tabla.png" width="90%" height="25">
+<tr>
+<td>
+<p align="center">
+<a href="https://discord.gg/q78GcqBmvy" target="_blank"><img alt="" height="64" src="pics/ps2spacediscordserverinvite.png" width="256" class="linkedimages"></a></td>
+</tr>
+</table>
+<br>
+</div>
+</body>
+</html>
