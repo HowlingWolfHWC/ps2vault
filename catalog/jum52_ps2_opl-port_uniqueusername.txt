@@ -1,0 +1,7 @@
+This is an Atari 5200 emulator for PS2.
+
+The 6502 CPU emulator source is heavily based on a distribution by Neil Bradley.
+The POKEY sound emulator is a modified version  of Ron Fries POKEY emulator.
+The rest is by Jum, using Bigboy's PS2 framework as a starting point.
+
+It has been packed with instructions so you can launch it in OPL.

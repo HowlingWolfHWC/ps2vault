@@ -1,0 +1,4 @@
+Simple Media System - based player with XMB GUI for the PS2 by developer: argonps2.
+
+Designed for the Sony PlayStation 2 (PS2), Argon, allows you to play multimedia files like XVID, DivX, and MP3.
+It is based off of the Simple Media Player (SMS) and offers an interface similar to that of the PlayStation 3 (PS3) and the PSP.

@@ -1,3 +1,0 @@
-This is a little test application for PS2 IOP of Abyss AHX replayer.
-It contains 200 different songs by a number of great AHX artists.
-It was created mainly to test the irx module functioned correctly.
