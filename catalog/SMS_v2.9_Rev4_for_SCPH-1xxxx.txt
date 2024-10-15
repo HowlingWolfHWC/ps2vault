@@ -1,0 +1,2 @@
+Unofficial SMS build.
+It was made to work with SCPH-1XXXX consoles (ProtoKernel)

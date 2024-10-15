@@ -1,0 +1,1 @@
+SMS is a media player, originally designed by Eugene Plotnikov, capable of playing DivX/XviD videos on PS2 very well, along with MP3/FLAC audio. It supports loading from USB, DVD, SMB and HDD, and it comes equipped with features such as built-in 720p/1080i support and its own data disc storage format (CDDAFS).

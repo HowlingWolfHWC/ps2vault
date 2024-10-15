@@ -1,0 +1,2 @@
+This AIO bundle packs every version from the very first one to the latest unofficial ones.
+It also includes every tool, translation files, user manuals, etc.
