@@ -1,0 +1,1 @@
+Fork based on one of the versions of wLE, modified by krHACKen. It allows renaming any partition on the HDD, as well as running PSX games from *.vcd disc images (that is, actually running POPStarter, to which the relevant parameters are passed).

@@ -1,0 +1,5 @@
+Collection of SNES Station mods.
+
+For USB users, we recommend v0.2.6c FIX Mod Pinguinoctis or v0.2.4 with updated USBD by ffgriever.
+If you're a HDD user, go with v0.2.4 rev B.
+And, if you're from that 0.01% that wants to burn the games into a DVD to use with FreeDVDBoot (not ESR), then use v0.2.0 HWC MOD with updated libcdvd.

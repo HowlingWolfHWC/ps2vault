@@ -1,0 +1,3 @@
+wLE mod that allows reading files from DVD Video discs.
+This is the wLE version used in FreeDVDBoot.
+It requires a disc to be inserted in order to work.

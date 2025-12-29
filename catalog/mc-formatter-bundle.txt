@@ -1,0 +1,2 @@
+This is a simple MC formatter.
+It can format or unformat a mc in the first and second memory card slots.

@@ -1,0 +1,2 @@
+Modified LbFn with an updated libcdvd to support DVD Video discs.
+It requires to have a disc inserted in order for it to work.

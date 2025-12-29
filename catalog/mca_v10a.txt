@@ -1,0 +1,8 @@
+This is a package containing the very first versions of Memory Card Annihilator.
+v1.0 is command line only. v1.0a features a GUI.
+Both are entirely in Polish.
+For usage instructions, please read the readme file.
+
+Warning:
+Do not use this software to increase the size of your Memory Card.
+You might damage it beyond repair.

@@ -1,0 +1,6 @@
+This is an AIO archive of the releases up to 1.7.6h for conservation purposes.
+Do not report bugs for these and, instead grab the latest version from GitHub or Patreon and test you games in these.
+
+For details on every release, please take a look at:
+https://github.com/wisi-w/DKWDRV/releases
+https://github.com/DKWDRV/DKWDRV/releases

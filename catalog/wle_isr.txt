@@ -1,0 +1,1 @@
+Fork based on one of the versions of wLE, modified by El_isra. It recognizes, and thus allows to open and edit text files with extensions: *.cfg, *.cht, *.cnf and *.ini. It also does not change the modifier's timestamp "mc?:/LAUNCHELF.CNF" so as not to mess up the exploits: Fortuna, FunTuna, OpenTuna.

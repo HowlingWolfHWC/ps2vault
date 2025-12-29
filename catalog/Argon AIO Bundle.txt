@@ -1,1 +1,1 @@
-This bundle contains the binary files and source snapshots from the SourceForge's Argon repository.
+This bundle contains the binary files and source snapshots from the Argon repository at SourceForge.

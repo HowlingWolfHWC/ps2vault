@@ -1,0 +1,2 @@
+This apps formats, unformats, creates saves and more on your Memory Card.
+It also checks if the Memory Card for TRC compliance.

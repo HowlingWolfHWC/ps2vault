@@ -1,0 +1,7 @@
+A PS2 exFAT BDM launcher for neutrino.
+
+NHDDL is a memory card-based launcher that scans FAT-formatted BDM devices for ISO files, lists them and boots selected ISO via neutrino.
+
+It displays visual Game ID to trigger per-game settings on the Pixel FX line of products and writes to memory card history file before launching the title, triggering per-title memory cards on SD2PSX and MemCard PRO 2.
+
+Supports Neutrino 1.4.0

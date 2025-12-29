@@ -1,0 +1,20 @@
+This tool formats/unformats memory cards and also creates/writes images of them.
+It can be used to restore cards broken by other formatters back to normal,
+like when 64MB card has been formatted to 8MB by MCKiller and similar tools).
+
+Warning:
+Do not use this software to increase the size of your Memory Card.
+You might damage it beyond repair.
+
+Changelog:
+- Updated Brazilian Portuguese translation
+- MCA will now attempt to load a language file after IOP reset (improves compatibility with new launchers)
+- Added Japanese support and Japanese translation (including changed fonts)
+- Clarified language file usage in readme
+- Fixed a bug that caused the app to be unable to unmount/remount an HDD partition if a language file was loaded from HDD
+- Fixed too long tooltips in Portuguese, French and Turkish
+- Small refactor and a compilation warning fix
+- Changed non PS2 specific names/enums
+- Removed old, unused and temporary code
+- Added support to print text with shadows (to prevent duplicated code)
+- Simplified IOP reset a lot

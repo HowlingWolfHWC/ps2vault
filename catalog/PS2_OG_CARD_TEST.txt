@@ -1,0 +1,4 @@
+Original Card Test (aka "OG Card Tester") is a test app that performs Memory Card authentication with dev MagicGate, which original cards can respond to. By doing that you can know if you MC is official or not.
+
+IMPORTANT NOTE:
+To avoid issues, please make sure to unplug and replug the cards before running the test ELF. Seems like when cards are authenticated once with retail keys they can't go back to developer keys until they are disconnected.

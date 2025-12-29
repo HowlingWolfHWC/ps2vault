@@ -1,0 +1,5 @@
+LbFn is an unofficial file manager that's a further modification of LbF, an unofficial modification of LaunchELF by yi.
+
+*In the NES Player in the 0.70.19 version, save data is stored in the same folder as the NES (or zip) file. Please note that save data will not be saved or updated when launching the player from a read-only device such as a CD/DVD.
+
+This version is known to have some issues. For stability, please use v0.70.18.

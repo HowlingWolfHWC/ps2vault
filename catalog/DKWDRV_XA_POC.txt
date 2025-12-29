@@ -1,0 +1,10 @@
+POC (proof of concept for audio).
+Very bad compatibility!
+Based on 1.7.3 version.
+Do not report any bugs for this, it is just a POC never update again.
+Select the USB game then go back to main menu and select RUN.
+Support only XA and probably still broken.
+
+It does not represent the final product in any way! This is just so the people who want it actually know what we have it. We have both USB and audio working, what we need is time to make it correctly working!!
+
+-This is just a VERY OLD POC for the those who ever doubted if we had it working. You can have fun playing around with it!

@@ -1,0 +1,21 @@
+This is a beta build of NHDDL with APA HDD and MMCE support.
+Beta 2 fixes regressions with memory card fallbacks and NHDDL returning when some of detected devices don't have any ISOs.
+Beta 3 fixes more regressions, drops non-standalone version, adds support for new GSM modes introduced in Neutrino nightlies and switches to using Neutrino quickboot mode.
+Beta 4 fixes last title for HDL mode and resolves the conflict between MMCE and MX4SIO drivers by removing MX4SIO from default modes.
+
+Changes:
+
+Support for MMCE devices
+Support for loading Neutrino from MMCE devices
+Support for loading ISOs from MMCE devices with MMCE-enabled Neutrino
+Support for granular mode selection: nhddl.yaml can contain more than one mode
+Use mmceman to trigger per-title memory cards on MMCE devices instead of writing to history file
+Full support for APA HDD with HD Loader partitions
+Support for new GSM modes
+All backends except HDL now use Neutrino quickboot for faster ISO boots
+Dropped non-standalone version to reduce maintenance burden
+Removed MX4SIO from default modes. MX4SIO users need to specify mode: mx4sio in nhddl.yaml for MX4SIO to be initialized.
+Note that MX4SIO will disable MMCE support even if mode: mmce is set.
+MMCE users are strongly recommended to place Neutrino directly on MMCE microSD into /neutrino/ instead of using PS2 memory cards for this build.
+
+Make sure to use Neutrino 1.6.0

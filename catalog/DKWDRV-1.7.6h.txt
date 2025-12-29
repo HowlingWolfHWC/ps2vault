@@ -1,0 +1,2 @@
+Unified Single PS1DRV Replacement, compatible with mostly all PS2 models.
+DKWDRV is a replacement for the original PS1DRV of Playstation 2 consoles. The original driver was heavily limited in features (sometimes on purpose and sometimes not) making user experience a real hassle. DKWDRV aims at overcoming this issues and making a much better gaming experience. Built from scratch by reversing both types of original drivers and merging them into one single unified driver. This project is not related in any way with any existing PS1 related PS2 homebrews out there.

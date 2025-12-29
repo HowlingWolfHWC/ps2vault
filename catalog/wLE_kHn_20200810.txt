@@ -1,0 +1,2 @@
+Fork based on one of the versions of wLE, modified by krHACKen. It allows renaming any partition on the HDD, as well as running PSX games from *.vcd disc images (that is, actually running POPStarter, to which the relevant parameters are passed).
+uLE kHn is published in the form of not only *.elf, but also *.xin (signed ELF for __mbr partition), *.xlf (signed ELF for PP. partitions), HDD image (i.e. "hdd0:/__mbr") and CD image.
